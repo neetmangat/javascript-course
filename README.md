@@ -1,0 +1,2 @@
+This is a repository consisting of the JavaScript Course challenges from CodeCademy.com.
+All projects have started as they came from CodeCademy and the final commit will have the solution to each project.
