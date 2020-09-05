@@ -25,21 +25,21 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 
 // Add your functions below:
 function validateCred(arr) {
-    // Iterate on reversed array & double every even index
+    // Reverse input array
     let revArr = [];
     for (let i = arr.length - 1; i >= 0; i--) {
         revArr.push(arr[i]);
     }
 
+    // Iterate on reversed array & double every other number
     let newArr = [];
     for (let i = 0; i < revArr.length; i++) {
         if (i % 2 === 0) {
             newArr.push(revArr[i]);
-        } else if (i % 2 === 1) {
+        } else {
             let doubled = revArr[i] * 2;
             if (doubled > 9) {
-                let subtracted = doubled - 9;
-                newArr.push(subtracted);
+                newArr.push(doubled - 9);
             } else {
                 newArr.push(doubled);
             }
