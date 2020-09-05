@@ -3,3 +3,65 @@ let story = 'Last weekend, I took literally the most beautiful bike ride of my l
 let overusedWords = ['really', 'very', 'basically'];
 
 let unnecessaryWords = ['extremely', 'literally', 'actually' ];
+
+
+// 1. Split string into array
+const storyWords = story.split(' ');
+
+
+// 2. Log original word count
+console.log('Original word count:', storyWords.length);
+
+
+// 3. Filter out any unnecessary words
+function betterWording(arr) {
+    let tempArr = arr.filter((word) => {
+        if (unnecessaryWords.includes(word)) {
+            return;
+        } else {
+            return word;
+        }
+    });
+    return tempArr
+};
+const betterWords = betterWording(storyWords);
+const betterWordCount = betterWords.length;
+
+
+// 4. Count number of overused words
+function overusedCounter(arr) {
+    let count = 0;
+    arr.forEach((word) => {
+        if (overusedWords.includes(word)) {
+            count++;
+        }
+    });
+    return count;
+};
+const overusedCount = overusedCounter(betterWords);
+
+
+// 5. Count number of sentences
+function sentenceCounter(string) {
+    let tempArr = string.split('');
+    let counter = 0;
+    tempArr.filter((char) => {
+        if (char === "." || char === "!") {
+            counter++;
+        }
+    });
+    return counter;
+};
+const sentenceCount = sentenceCounter(story);
+
+
+// 6. Log word count, sentence count, and overused words count
+function logCounts(words, overused, sentence) {
+    console.log('Better word count:', words);
+    console.log('Overused words:', overused);
+    console.log('Sentence count:', sentence);
+}
+logCounts(betterWordCount, overusedCount, sentenceCount);
+
+// 7. Log betterWords as string
+console.log(betterWords.join(' '));
