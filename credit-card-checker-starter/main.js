@@ -24,11 +24,45 @@ const batch = [valid1, valid2, valid3, valid4, valid5, invalid1, invalid2, inval
 
 
 // Add your functions below:
+function validateCred(arr) {
+    // Iterate on reversed array & double every even index
+    let revArr = [];
+    for (let i = arr.length - 1; i >= 0; i--) {
+        revArr.push(arr[i]);
+    }
 
+    let newArr = [];
+    for (let i = 0; i < revArr.length; i++) {
+        if (i % 2 === 0) {
+            newArr.push(revArr[i]);
+        } else if (i % 2 === 1) {
+            let doubled = revArr[i] * 2;
+            if (doubled > 9) {
+                let subtracted = doubled - 9;
+                newArr.push(subtracted);
+            } else {
+                newArr.push(doubled);
+            }
+        }
+    }
 
+    // Sum the array
+    let creditSum = 0;
+    for (let i = 0; i < newArr.length; i++) {
+        creditSum = creditSum + newArr[i];
+    }
 
+    // Return validity
+    if (creditSum % 10 === 0) {
+        return true;
+    } else {
+        return false;
+    }
+}
 
-
-
-
-
+// Automated check:
+for (let i = 0; i < batch.length; i++) {
+    console.log(
+        validateCred(batch[i])
+    );
+}
