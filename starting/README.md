@@ -4,9 +4,8 @@ Prerequisites
 
 In this project, you’ll be building an interactive terminal game with JavaScript classes. Because the goal involves user input, make sure you read our guide on working with user input in Node.js. If you complete this project on our platform, you can test and run your code with the command node main.js in our terminal.
 
-Watch this video to get a sense of what you’ll be building:
+Checkout the find-your-hat-demo.gif to get a sense of what you’ll be building.
 
-Find Your Hat gameplay
 ----------------------
 
 Project Requirements
@@ -46,6 +45,7 @@ When any of the above occur, let the user know and end the game.
 
 This method should at least take arguments for height and width of the field, and it should return a randomized two-dimensional array representing the field with a hat and one or more holes. In our solution, we added a third percentage argument used to determine what percent of the field should be covered in holes.
 
+----------------------
 
 Project Solution and Extensions
 
