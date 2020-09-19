@@ -1,0 +1,12 @@
+{
+  "type": "module",
+  "name": "message-mixer",
+  "version": "1.0.0",
+  "description": "mix your messages up!",
+  "main": "message.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "ISC"
+}
