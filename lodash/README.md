@@ -80,6 +80,7 @@ If no end value is provided to the method, the start value will be 0 and the end
 If the provided start value is larger than the provided end value, the two values should be swapped
 When you’ve ideated a game plan for how to implement this functionality, move on to the next step to see how we plan to do it.
 
+
 8. Ideate: As always, there are a number of different solutions that could work to solve this problem. This is just one solution.
 
 Add the .inRange() method to the lodash object.
@@ -88,8 +89,8 @@ Check to see if the start value is larger than the end value. If so, swap the tw
 Using boolean operators, find out if the number is in the specified range.
 Return the value of the previous operation from the method.
 Once you have tried implementing this game plan in code, move on to the next step to see how we do it.
-9.
-Implement: Let’s implement our game plan in code.
+
+9. Implement: Let’s implement our game plan in code.
 
 Add a method to our _ object called inRange.
 Add three parameters to this method: number, start, and end.
@@ -100,16 +101,15 @@ Within the if statement block, swap the two start and end values. Create a varia
 After our second if statement, create a variable called isInRange and set it equal to a boolean expression that checks if start is smaller than or equal to number and if number is smaller than end.
 Finally, return the value of isInRange from the method.
 Once you’ve finished implementing this method, move on to the next step to test it.
-10.
-Test: To test that our .inRange() method works as expected, run node test/in-range.js in your terminal. Don’t worry if any errors appear, work through them one by one until your code runs as expected.
+
+10. Test: To test that our .inRange() method works as expected, run node test/in-range.js in your terminal. Don’t worry if any errors appear, work through them one by one until your code runs as expected.
 
 Congratulations, you’ve finished implementing all of the number methods!
 
 When you’re ready, move on to the next method.
 Implement .words()
 
-11.
-Specify: Let’s start implementing some string methods! The first string method we will implement is .words(). We will be writing a slightly modified version of this method to save you some time. Read the explanation and examples of the method in the linked documentation to get a sense of how the method should work. Then read below to see which pieces of functionality you will implement.
+11. Specify: Let’s start implementing some string methods! The first string method we will implement is .words(). We will be writing a slightly modified version of this method to save you some time. Read the explanation and examples of the method in the linked documentation to get a sense of how the method should work. Then read below to see which pieces of functionality you will implement.
 
 Here is a summary of what your method should do:
 
@@ -118,31 +118,30 @@ Here is a summary of what your method should do:
 A word is defined by a space-separated string of characters, so each space character, ' ', indicates the end of one word and the start of the next
 Note: You may have noticed in the documentation that this function has a pattern parameter. Your method does not need to accept the additional pattern parameter, we will only split our string into words based on spaces
 When you’ve ideated a game plan for how to implement this functionality, move on to the next step to see how we plan to do it.
-12.
-Ideate: This solution probably has the most potential solutions of the methods we have implemented thus far. We’ve opted to use a built-in JavaScript method to make this method as short and readable as possible.
+
+12. Ideate: This solution probably has the most potential solutions of the methods we have implemented thus far. We’ve opted to use a built-in JavaScript method to make this method as short and readable as possible.
 
 Add the .words() method to the lodash object.
 Use the string .split() method to split the provided string on space characters into an array of words.
 Return the array of words generated in the previous step.
 Once you have tried implementing this game plan in code, move on to the next step to see how we do it.
-13.
-Implement: Let’s implement our game plan in code.
+
+13. Implement: Let’s implement our game plan in code.
 
 Add a method to our _ object called words.
 Add one parameter to this method: string.
 Within the method, create a variable called words and set its value equal to string split on space characters ' ' using the .split() method.
 Return the value of words from the method.
 Once you’ve finished implementing this method, move on to the next step to test it.
-14.
-Test: To test that our .words() method works as expected, run node test/words.js in your terminal. Don’t worry if any errors appear, work through them one by one until your code runs as expected.
+
+14. Test: To test that our .words() method works as expected, run node test/words.js in your terminal. Don’t worry if any errors appear, work through them one by one until your code runs as expected.
 
 Congratulations! You’ve finished implementing your first string method.
 
 When you’re ready, move on to the next method.
 Implement .pad()
 
-15.
-Specify: The next string method we will implement is .pad(). We will be writing a slightly modified version of this method to save you some time. Read the explanation and examples of the method in the linked documentation to get a sense of how the method should work. Then read below to see which pieces of functionality you will implement.
+15. Specify: The next string method we will implement is .pad(). We will be writing a slightly modified version of this method to save you some time. Read the explanation and examples of the method in the linked documentation to get a sense of how the method should work. Then read below to see which pieces of functionality you will implement.
 
 Here is a summary of what your method should do:
 
@@ -153,8 +152,8 @@ Your method does not need to accept the additional chars parameter; we will only
 You can see a diagram demonstrating this functionality here.
 
 When you’ve ideated a game plan for how to implement this functionality, move on to the next step to see how we plan to do it.
-16.
-Ideate: Again, as noted with previous game plans, there are many solutions to this problem. We chose this one for readability.
+
+16. Ideate: Again, as noted with previous game plans, there are many solutions to this problem. We chose this one for readability.
 
 Add the .pad() method to the lodash object.
 Check to make sure the target length is longer than the current string length. If not, return the unpadded version of the string.
@@ -163,8 +162,8 @@ Find the amount of padding to add to the end of the string by subtracting the st
 Generate the padded string by adding the amount of starting padding and ending padding calculated above to each side of the current string.
 Return the padded version of the string.
 Once you have tried implementing this game plan in code, move on to the next step to see how we do it.
-17.
-Implement: Let’s implement our game plan in code.
+
+17. Implement: Let’s implement our game plan in code.
 
 Add a method to our _ object called pad.
 Add two parameters to this method: string and length.
@@ -174,16 +173,15 @@ Create a variable called endPaddingLength and set its value equal to length minu
 Create a new variable called paddedString and set its value equal to the space character, ' ', repeated startPaddingLength number of times (using the string .repeat() method), concatenated with string, concatenated with the space character repeated endPaddingLength number of times.
 Return the value of paddedString from the method.
 Once you’ve finished implementing this method, move on to the next step to test it.
-18.
-Test: To test that our .pad() method works as expected, run node test/pad.js in your terminal. Don’t worry if any errors appear, work through them one by one until your code runs as expected.
+
+18. Test: To test that our .pad() method works as expected, run node test/pad.js in your terminal. Don’t worry if any errors appear, work through them one by one until your code runs as expected.
 
 Congratulations, you’ve finished implementing all of the new string methods!
 
 When you’re ready, move on to the next method.
 Implement _.has()
 
-19.
-Specify: Let’s begin implementing some new object methods! The first object method we will implement is .has(). We will be writing a slightly modified version of this method to save you some time. Read the explanation and examples of the method in the linked documentation to get a sense of how the method should work. Then read below to see which pieces of functionality you will implement.
+19. Specify: Let’s begin implementing some new object methods! The first object method we will implement is .has(). We will be writing a slightly modified version of this method to save you some time. Read the explanation and examples of the method in the linked documentation to get a sense of how the method should work. Then read below to see which pieces of functionality you will implement.
 
 Here is a summary of what your method should do:
 
@@ -192,40 +190,39 @@ Here is a summary of what your method should do:
 .has() will return true if the object contains a value at the key and will return false if not
 Your method does not need to accept the additional path parameter; we will only check for unnested values
 When you’ve ideated a game plan for how to implement this functionality, move on to the next step to see how we plan to do it.
-20.
-Ideate: Let’s come up with a game plan for implementing this method.
+
+20. Ideate: Let’s come up with a game plan for implementing this method.
 
 Add the .has() method to the lodash object.
 Access the current value at the specified key in the object.
 Check to see if the value at that key is undefined.
 Return false if the value is undefined and true if not.
 Once you have tried implementing this game plan in code, move on to the next step to see how we do it.
-21.
-Implement: Let’s implement our game plan in code.
+
+21. Implement: Let’s implement our game plan in code.
 
 Add a method to our _ object called has
 Add two parameters to this method: object and key
 Within the method, create a variable called hasValue and set its value equal to the result of checking to see if the current value of object at key does not equal undefined.
 Return the value of hasValue from the method.
 Once you’ve finished implementing this method, move on to the next step to test it.
-22.
-Test: To test that our .has() method works as expected, run node test/has.js in your terminal. Don’t worry if any errors appear, work through them one by one until your code runs as expected.
+
+22. Test: To test that our .has() method works as expected, run node test/has.js in your terminal. Don’t worry if any errors appear, work through them one by one until your code runs as expected.
 
 Congratulations! You’ve finished implementing the first new object method.
 
 When you’re ready, move on to the next method.
 Implement _.invert()
 
-23.
-Specify: The next object method we will implement is .invert(). Read the explanation and examples of the method in the linked documentation to get a sense of how the method should work.
+23. Specify: The next object method we will implement is .invert(). Read the explanation and examples of the method in the linked documentation to get a sense of how the method should work.
 
 Here is a summary of what your method should do:
 
 .invert() takes one argument: an object
 .invert() iterates through each key / value pair in the provided object and swaps the key and value
 When you’ve ideated a game plan for how to implement this functionality, move on to the next step to see how we plan to do it.
-24.
-Ideate: Let’s come up with a game plan for implementing this method.
+
+24. Ideate: Let’s come up with a game plan for implementing this method.
 
 Add the .invert() method to the lodash object.
 Create a new object to represent our inverted object.
@@ -233,8 +230,8 @@ Iterate through each key in the provided object.
 Set the original object’s value at that key to be a key on our inverted object and set the value of that key to be the original object’s key.
 Return the inverted object.
 Once you have tried implementing this game plan in code, move on to the next step to see how we do it.
-25.
-Implement: Let’s implement our game plan in code.
+
+25. Implement: Let’s implement our game plan in code.
 
 Add a method to our _ object called invert.
 Add one parameter to this method: object.
@@ -244,14 +241,13 @@ Within the loop, create a variable called originalValue and set it equal to the 
 Still within the loop, set the value at originalValue on invertedObject to be the current key.
 Finally, outside of the loop, return the value of invertedObject from the method.
 Once you’ve finished implementing this method, move on to the next step to test it.
-26.
-Test: To test that our .invert() method works as expected, run node test/invert.js in your terminal. Don’t worry if any errors appear, work through them one by one until your code runs as expected.
+
+26. Test: To test that our .invert() method works as expected, run node test/invert.js in your terminal. Don’t worry if any errors appear, work through them one by one until your code runs as expected.
 
 Congratulations! When you’re ready, move on to the next method.
 Implement _.findKey()
 
-27.
-Specify: The final object method we will implement is .findKey(). Read the explanation and examples of the method in the linked documentation to get a sense of how the method should work.
+27. Specify: The final object method we will implement is .findKey(). Read the explanation and examples of the method in the linked documentation to get a sense of how the method should work.
 
 Here is a summary of what your method should do:
 
@@ -260,8 +256,8 @@ Here is a summary of what your method should do:
 .findKey() returns the first key that has a value that returns a truthy value from the predicate function
 .findKey() returns undefined if no values return truthy values from the predicate function
 When you’ve ideated a game plan for how to implement this functionality, move on to the next step to see how we plan to do it.
-28.
-Ideate: Let’s come up with a game plan for implementing this method.
+
+28. Ideate: Let’s come up with a game plan for implementing this method.
 
 Add the .findKey() method to the lodash object.
 Iterate through each key in the provided object.
@@ -269,8 +265,8 @@ Call the provided predicate function with the value at that key.
 If the predicate function returns a truthy value, return the current key from the method.
 After the loop, return undefined, since no values returned a truthy value from the predicate function.
 Once you have tried implementing this game plan in code, move on to the next step to see how we do it.
-29.
-Implement: Let’s implement our game plan in code.
+
+29. Implement: Let’s implement our game plan in code.
 
 Add a method to our _ object called findKey.
 Add two parameters to this method: object and predicate. We will name our predicate function parameter predicate since this is the name used in the Lodash documentation.
@@ -280,16 +276,15 @@ Still within the loop, create another variable called predicateReturnValue and s
 Finally, still within the loop, use an if statement to check to see if predicateReturnValue is truthy. If it is, return the current key from the method.
 Outside of the loop, return undefined to address all cases where no truthy values were returned from predicate.
 Once you’ve finished implementing this method, move on to the next step to test it.
-30.
-Test: To test that our .findKey() method works as expected, run node test/find-key.js in your terminal. Don’t worry if any errors appear, work through them one by one until your code runs as expected.
+
+30. Test: To test that our .findKey() method works as expected, run node test/find-key.js in your terminal. Don’t worry if any errors appear, work through them one by one until your code runs as expected.
 
 Congratulations, you’ve implemented all of the object methods! These are starting to get a little tricky. If you’re feeling overwhelmed at all, that’s normal. Just keep tackling these problems one at a time, and you’ll soon find that you’ll be able to tackle problems like these faster and faster.
 
 When you’re ready, move on to the next method.
 Implement _.drop()
 
-31.
-Specify: It’s time to start implementing methods for our final data type: arrays! The first array method we will implement is .drop(). Read the explanation and examples of the method in the linked documentation to get a sense of how the method should work.
+31. Specify: It’s time to start implementing methods for our final data type: arrays! The first array method we will implement is .drop(). Read the explanation and examples of the method in the linked documentation to get a sense of how the method should work.
 
 Here is a summary of what your method should do:
 
@@ -297,16 +292,16 @@ Here is a summary of what your method should do:
 .drop() returns a new array which contains the elements from the original array, excluding the specified number of elements from the beginning of the array
 If the number of elements to drop is unspecified, your method should drop one element
 When you’ve ideated a game plan for how to implement this functionality, move on to the next step to see how we plan to do it.
-32.
-Ideate: Let’s come up with a game plan for implementing this method.
+
+32. Ideate: Let’s come up with a game plan for implementing this method.
 
 Add the .drop() method to the lodash object.
 Check to see if the number of items to drop was set. If not, set the number equal to 1.
 Create a new copy of the original array with the specified number of elements dropped from the beginning of the array. We will use the array .slice() method to accomplish this.
 Return the modified copy of the array from the method.
 Once you have tried implementing this game plan in code, move on to the next step to see how we do it.
-33.
-Implement: Let’s implement our game plan in code.
+
+33. Implement: Let’s implement our game plan in code.
 
 Add a method to our _ object called drop.
 Add two parameters to this method: array and n.
@@ -315,16 +310,15 @@ Within the if statement block, set n equal to 1.
 Outside of the if statment, create a new variable called droppedArray and set its value to be a copy of the array missing the first n elements by using .slice().
 Return droppedArray from the method.
 Once you’ve finished implementing this method, move on to the next step to test it.
-34.
-Test: To test that our .drop() method works as expected, run node test/drop.js in your terminal. Don’t worry if any errors appear, work through them one by one until your code runs as expected.
+
+34. Test: To test that our .drop() method works as expected, run node test/drop.js in your terminal. Don’t worry if any errors appear, work through them one by one until your code runs as expected.
 
 Congratulations, you’ve implemented the first array method!
 
 When you’re ready, move on to the next method.
 Implement _.dropWhile()
 
-35.
-Specify: The next array method we will implement is .dropWhile(). Read the explanation and examples of the method in the linked documentation to get a sense of how the method should work.
+35. Specify: The next array method we will implement is .dropWhile(). Read the explanation and examples of the method in the linked documentation to get a sense of how the method should work.
 
 Here is a summary of what your method should do:
 
@@ -332,16 +326,16 @@ Here is a summary of what your method should do:
 The supplied predicate function takes three arguments: the current element, the current element index, and the whole array
 .dropWhile() creates a new copy of the supplied array, dropping elements from the beginning of the array until an element causes the predicate function to return a falsy value
 When you’ve ideated a game plan for how to implement this functionality, move on to the next step to see how we plan to do it.
-36.
-Ideate: Let’s come up with a game plan for implementing this method.
+
+36. Ideate: Let’s come up with a game plan for implementing this method.
 
 Add the .dropWhile() method to the lodash object.
 Iterate through the array until you find an element that causes the predicate to return a falsy value. We will use .findIndex() to iterate through the array since it is built to iterate through an array until it finds an element that returns a specific value.
 Use our previous .drop() method to drop the elements prior to the one that returned a falsy value.
 Return the modified copy of the array from the method.
 Once you have tried implementing this game plan in code, move on to the next step to see how we do it.
-37.
-Implement: Let’s implement our game plan in code.
+
+37. Implement: Let’s implement our game plan in code.
 
 Add a method to our _ object called dropWhile.
 Add two parameters to this method: array and predicate.
@@ -351,16 +345,15 @@ Within the callback function, return the negated return value of predicate calle
 After the entire dropNumber declaration, create a new variable called droppedArray and set its value to the return value of this.drop() called with dropNumber. We are using this since .drop() is a method on the _ object which is the current object we are working from, and therefore the current value of this. Calling _.drop() would also have worked but is a less common practice.
 Return droppedArray from the method.
 Once you’ve finished implementing this method, move on to the next step to test it.
-38.
-Test: To test that our .dropWhile() method works as expected, run node test/drop-while.js in your terminal. Don’t worry if any errors appear, work through them one by one until your code runs as expected.
+
+38. Test: To test that our .dropWhile() method works as expected, run node test/drop-while.js in your terminal. Don’t worry if any errors appear, work through them one by one until your code runs as expected.
 
 Congratulations! This method wasn’t especially long, but it used a lot of advanced concepts. Great job working through it!
 
 When you’re ready, move on to the next method.
 Implement _.chunk()
 
-39.
-Specify: The last array method we will implement is .chunk(). Read the explanation and examples of the method in the linked documentation to get a sense of how the method should work.
+39. Specify: The last array method we will implement is .chunk(). Read the explanation and examples of the method in the linked documentation to get a sense of how the method should work.
 
 Here is a summary of what your method should do:
 
@@ -372,8 +365,8 @@ If no size is supplied to the method, the size is set to 1
 You can see a diagram demonstrating this functionality here.
 
 When you’ve ideated a game plan for how to implement this functionality, move on to the next step to see how we plan to do it.
-40.
-Ideate: Let’s come up with a game plan for implementing this method.
+
+40. Ideate: Let’s come up with a game plan for implementing this method.
 
 Add the .chunk() method to the lodash object.
 Check to see if a size has been supplied. If not, set the size equal to 1.
@@ -381,8 +374,8 @@ Create an empty array that will contain all of the generated array chunks.
 Loop through the array. In each turn of the loop, create an array chunk of the specified size, add it to the final array, and increase the loop counter by the chunk size to go to the next chunk. We will use a for loop to do this, since no iterator method does exactly what we want and a while loop won’t auto-increment.
 Return the array of array chunks from the method.
 Once you have tried implementing this game plan in code, move on to the next step to see how we do it.
-41.
-Implement: Let’s implement our game plan in code.
+
+41. Implement: Let’s implement our game plan in code.
 
 Add a method to our _ object called chunk.
 Add two parameters to this method: array and size.
@@ -394,8 +387,8 @@ Within the for loop, create a variable called arrayChunk and set it equal to the
 Still within the for loop, add arrayChunk to the end of arrayChunks. You can use .push() to accomplish this.
 Finally, outside of the for loop, return arrayChunks from the method.
 Once you’ve finished implementing this method, move on to the next step to test it.
-42.
-Test: To test that our .chunk() method works as expected, run node test/chunk.js in your terminal. Don’t worry if any errors appear, work through them one by one until your code runs as expected.
+
+42. Test: To test that our .chunk() method works as expected, run node test/chunk.js in your terminal. Don’t worry if any errors appear, work through them one by one until your code runs as expected.
 
 Congratulations, you’ve implemented all of the methods of this project! This is a huge accomplishment.
 
